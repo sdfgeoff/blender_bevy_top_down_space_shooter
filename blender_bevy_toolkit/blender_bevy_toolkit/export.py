@@ -1,7 +1,11 @@
 """ Converts from blender objects into a scene description """
 import os
+import logging
 import bpy
-from . import component_base, rust_types
+from . import component_base, rust_types, jdict
+
+
+logger = logging.getLogger(__name__)
 
 
 class Entity:
@@ -26,6 +30,9 @@ class Entity:
 
 def export_entity(config, obj, entity_id):
     """Compile all the data about an object into an entity with components"""
+    logger.debug(
+        jdict(event="serializing_entity", obj_name=obj.name, entity_id=entity_id)
+    )
     entity = Entity(entity_id, [])
 
     for component in component_base.COMPONENTS:
@@ -45,7 +52,7 @@ def export_all(config):
         # will be subbed for actually using proper instancing of collections
         # but I couldn't get this to work in bevy :(
         bpy.ops.object.select_all(action="SELECT")
-        bpy.ops.object.duplicates_make_real(use_base_parent=True, use_hierarchy=False)
+        bpy.ops.object.duplicates_make_real(use_base_parent=True, use_hierarchy=True)
 
     config["mesh_output_folder"] = os.path.join(
         output_folder, config["mesh_output_folder"]
