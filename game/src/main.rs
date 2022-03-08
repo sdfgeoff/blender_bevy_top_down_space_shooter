@@ -56,8 +56,6 @@ fn control_ship(
 
         rb_forces.force = forces.into();
         rb_forces.torque = torques.into();
-
-        println!("{:?}, {:?}", player, forces);
     }
 }
 
