@@ -1,6 +1,5 @@
 use bevy::prelude::*;
 
-
 #[derive(Reflect, Default, Component, Debug)]
 #[reflect(Component)]
 pub struct Ship {
@@ -10,7 +9,4 @@ pub struct Ship {
 
 #[derive(Reflect, Default, Component, Debug)]
 #[reflect(Component)]
-pub struct EngineFlare {
-
-}
-
+pub struct EngineFlare {}
