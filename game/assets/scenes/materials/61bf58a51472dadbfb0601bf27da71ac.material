@@ -1,0 +1,29 @@
+(
+	base_color:RgbaLinear(
+		red:1.0,
+		green:1.0,
+		blue:1.0,
+		alpha:1.0
+	),
+	base_color_texture:Some(
+		"scenes/textures/8ca6c41043f7f8a6fe26dc036e975d1e.png"
+	),
+	emissive:RgbaLinear(
+		red:1.0,
+		green:1.0,
+		blue:1.0,
+		alpha:1.0
+	),
+	emissive_texture:Some(
+		"scenes/textures/8ca6c41043f7f8a6fe26dc036e975d1e.png"
+	),
+	perceptual_roughness:0.5,
+	metallic:0.0,
+	metallic_roughness_texture:None,
+	reflectance:0.5,
+	normal_map_texture:None,
+	occlusion_texture:None,
+	double_sided:true,
+	unlit:false,
+	alpha_mode:Opaque
+)

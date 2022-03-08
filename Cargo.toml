@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "game",
+    "blender_bevy_toolkit",
+]
+resolver = "2"
