@@ -1,0 +1,20 @@
+name: Check formating
+on: [push]
+jobs:
+  Fmt-check:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Cache Blender packages
+        uses: actions/cache@v2
+        with:
+          path: .blender
+          key: CACHE_BLENDER_ALWAYS
+    
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Installing blender
+        run: make blender;
+      - name: Installing python deps
+        run: pip install vulture black
+      - run: make fmt-test 
