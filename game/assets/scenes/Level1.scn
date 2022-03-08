@@ -11207,7 +11207,7 @@
 				"struct":{
 					"is_visible":{
 						"type":"bool",
-						"value":true
+						"value":false
 					}
 				}
 			},
@@ -11269,6 +11269,10 @@
 				]
 			},
 			{
+				"type":"game::player::Player",
+				"struct":{}
+			},
+			{
 				"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription",
 				"struct":{
 					"body_status":0,
@@ -11302,6 +11306,27 @@
 							0,
 							0,
 							0
+						)
+					}
+				}
+			},
+			{
+				"type":"game::ship::Ship",
+				"struct":{
+					"thrust":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							10.0,
+							10.0,
+							10.0
+						)
+					},
+					"drag":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							1.0,
+							1.0,
+							10.0
 						)
 					}
 				}
@@ -11341,7 +11366,7 @@
 				"struct":{
 					"is_visible":{
 						"type":"bool",
-						"value":true
+						"value":false
 					}
 				}
 			}
@@ -11499,6 +11524,10 @@
 						"value":true
 					}
 				}
+			},
+			{
+				"type":"game::ship::EngineFlare",
+				"struct":{}
 			},
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -11895,6 +11924,10 @@
 						"value":true
 					}
 				}
+			},
+			{
+				"type":"game::ship::EngineFlare",
+				"struct":{}
 			},
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",

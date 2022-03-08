@@ -1,0 +1,20 @@
+{
+    "name": "Ship",
+    "description": "This object is a spaceship that can be moved around by applying physics forces",
+    "id": "spacecraft_component_spaceship",
+    "struct": "game::ship::Ship",
+    "fields": [
+        {
+            "field": "thrust", 
+            "type": "vec3", 
+            "default": [10.0, 10.0, 10.0],
+            "description": "Max force the engines of the ship can apply. Z Axis is rotation."
+        },
+        {
+            "field": "drag", 
+            "type": "vec3", 
+            "default": [1.0, 1.0, 10.0],
+            "description": "Drag on the ship. Z axis is rotation."
+        }
+    ]
+}

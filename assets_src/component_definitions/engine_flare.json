@@ -1,0 +1,8 @@
+{
+    "name": "Engine Flare",
+    "description": "VFX for an engine",
+    "id": "game_engine_flare",
+    "struct": "game::ship::EngineFlare",
+    "fields": [
+    ]
+}

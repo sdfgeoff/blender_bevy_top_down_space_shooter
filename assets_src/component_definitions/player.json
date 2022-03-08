@@ -1,0 +1,8 @@
+{
+    "name": "Player",
+    "description": "Player is used to control this vehicle",
+    "id": "game_player",
+    "struct": "game::player::Player",
+    "fields": [
+    ]
+}
