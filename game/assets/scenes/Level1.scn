@@ -3,6 +3,192 @@
 		entity:0,
 		components:[
 			{
+				"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription",
+				"struct":{
+					"friction":{
+						"type":"f32",
+						"value":0.5
+					},
+					"restitution":{
+						"type":"f32",
+						"value":0.5
+					},
+					"is_sensor":{
+						"type":"bool",
+						"value":false
+					},
+					"centroid_translation":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.0,
+							0.0,
+							0.0
+						)
+					},
+					"density":{
+						"type":"f32",
+						"value":0.5
+					},
+					"collider_shape":2,
+					"collider_shape_data":{
+						"type":"smallvec::SmallVec<[u8; 12]>",
+						"list":[
+							0,
+							0,
+							0,
+							63,
+							0,
+							0,
+							0,
+							63,
+							0,
+							0,
+							0,
+							63
+						]
+					}
+				}
+			},
+			{
+				"type":"bevy_render::view::visibility::ComputedVisibility",
+				"struct":{
+					"is_visible":{
+						"type":"bool",
+						"value":true
+					}
+				}
+			},
+			{
+				"type":"bevy_transform::components::global_transform::GlobalTransform",
+				"struct":{
+					"translation":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.013336122035980225,
+							0.15874913334846497,
+							2.32816743850708
+						)
+					},
+					"rotation":{
+						"type":"glam::quat::Quat",
+						"value":(
+							-0.06387324631214142,
+							-0.17549031972885132,
+							0.4530971050262451,
+							0.8716802000999451
+						)
+					},
+					"scale":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.5,
+							0.5,
+							0.5
+						)
+					}
+				}
+			},
+			{
+				"type":"blender_bevy_toolkit::blend_label::BlendLabel",
+				"struct":{
+					"name":"Cube"
+				}
+			},
+			{
+				"type":"blender_bevy_toolkit::blend_material::BlendMaterialLoader",
+				"struct":{
+					"path":"scenes/materials/fee242958bbfa886b9719e65a351339b.material"
+				}
+			},
+			{
+				"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader",
+				"struct":{
+					"path":"scenes/meshes/99b63298142a0485c443b84e3760400c.mesh"
+				}
+			},
+			{
+				"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription",
+				"struct":{
+					"body_status":0,
+					"damping_angular":{
+						"type":"f32",
+						"value":0.0
+					},
+					"damping_linear":{
+						"type":"f32",
+						"value":0.0
+					},
+					"ccd_enable":{
+						"type":"bool",
+						"value":false
+					},
+					"sleep_allow":{
+						"type":"bool",
+						"value":false
+					},
+					"lock_translation":{
+						"type":"glam::vec3::IVec3",
+						"value":(
+							0,
+							0,
+							0
+						)
+					},
+					"lock_rotation":{
+						"type":"glam::vec3::IVec3",
+						"value":(
+							0,
+							0,
+							0
+						)
+					}
+				}
+			},
+			{
+				"type":"bevy_transform::components::transform::Transform",
+				"struct":{
+					"translation":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.013336122035980225,
+							0.15874913334846497,
+							2.32816743850708
+						)
+					},
+					"rotation":{
+						"type":"glam::quat::Quat",
+						"value":(
+							-0.06387323886156082,
+							-0.17549031972885132,
+							0.4530971348285675,
+							0.8716802000999451
+						)
+					},
+					"scale":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.5,
+							0.5,
+							0.5
+						)
+					}
+				}
+			},
+			{
+				"type":"bevy_render::view::visibility::Visibility",
+				"struct":{
+					"is_visible":{
+						"type":"bool",
+						"value":true
+					}
+				}
+			}
+		]
+	),
+	(
+		entity:1,
+		components:[
+			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
 				"struct":{
 					"translation":{
@@ -71,7 +257,7 @@
 		]
 	),
 	(
-		entity:1,
+		entity:2,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -142,7 +328,7 @@
 		]
 	),
 	(
-		entity:2,
+		entity:3,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -213,7 +399,7 @@
 		]
 	),
 	(
-		entity:3,
+		entity:4,
 		components:[
 			{
 				"type":"bevy_render::camera::camera::Camera",
@@ -328,7 +514,7 @@
 		]
 	),
 	(
-		entity:4,
+		entity:5,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -399,7 +585,7 @@
 		]
 	),
 	(
-		entity:5,
+		entity:6,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -470,7 +656,7 @@
 		]
 	),
 	(
-		entity:6,
+		entity:7,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -541,7 +727,7 @@
 		]
 	),
 	(
-		entity:7,
+		entity:8,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -612,7 +798,7 @@
 		]
 	),
 	(
-		entity:8,
+		entity:9,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -683,7 +869,7 @@
 		]
 	),
 	(
-		entity:9,
+		entity:10,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -754,7 +940,7 @@
 		]
 	),
 	(
-		entity:10,
+		entity:11,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -825,7 +1011,7 @@
 		]
 	),
 	(
-		entity:11,
+		entity:12,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -896,7 +1082,7 @@
 		]
 	),
 	(
-		entity:12,
+		entity:13,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -967,7 +1153,7 @@
 		]
 	),
 	(
-		entity:13,
+		entity:14,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1038,7 +1224,7 @@
 		]
 	),
 	(
-		entity:14,
+		entity:15,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1109,7 +1295,7 @@
 		]
 	),
 	(
-		entity:15,
+		entity:16,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1180,7 +1366,7 @@
 		]
 	),
 	(
-		entity:16,
+		entity:17,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1251,7 +1437,7 @@
 		]
 	),
 	(
-		entity:17,
+		entity:18,
 		components:[
 			{
 				"type":"bevy_render::primitives::CubemapFrusta",
@@ -1368,7 +1554,7 @@
 		]
 	),
 	(
-		entity:18,
+		entity:19,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1439,7 +1625,7 @@
 		]
 	),
 	(
-		entity:19,
+		entity:20,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1510,7 +1696,7 @@
 		]
 	),
 	(
-		entity:20,
+		entity:21,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1581,7 +1767,7 @@
 		]
 	),
 	(
-		entity:21,
+		entity:22,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1652,7 +1838,7 @@
 		]
 	),
 	(
-		entity:22,
+		entity:23,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1723,7 +1909,7 @@
 		]
 	),
 	(
-		entity:23,
+		entity:24,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1794,7 +1980,7 @@
 		]
 	),
 	(
-		entity:24,
+		entity:25,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1865,7 +2051,7 @@
 		]
 	),
 	(
-		entity:25,
+		entity:26,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -1936,7 +2122,7 @@
 		]
 	),
 	(
-		entity:26,
+		entity:27,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2007,8 +2193,55 @@
 		]
 	),
 	(
-		entity:27,
+		entity:28,
 		components:[
+			{
+				"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription",
+				"struct":{
+					"friction":{
+						"type":"f32",
+						"value":0.5
+					},
+					"restitution":{
+						"type":"f32",
+						"value":0.5
+					},
+					"is_sensor":{
+						"type":"bool",
+						"value":false
+					},
+					"centroid_translation":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.0,
+							0.0,
+							-0.5
+						)
+					},
+					"density":{
+						"type":"f32",
+						"value":0.5
+					},
+					"collider_shape":2,
+					"collider_shape_data":{
+						"type":"smallvec::SmallVec<[u8; 12]>",
+						"list":[
+							0,
+							0,
+							72,
+							65,
+							0,
+							0,
+							72,
+							65,
+							0,
+							0,
+							0,
+							63
+						]
+					}
+				}
+			},
 			{
 				"type":"bevy_render::view::visibility::ComputedVisibility",
 				"struct":{
@@ -2063,7 +2296,45 @@
 			{
 				"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader",
 				"struct":{
-					"path":"scenes/meshes/e0dc87deab49dcc45a75e1652177b3a4.mesh"
+					"path":"scenes/meshes/4eacce26444c7489a71086f5cc46aeb9.mesh"
+				}
+			},
+			{
+				"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription",
+				"struct":{
+					"body_status":1,
+					"damping_angular":{
+						"type":"f32",
+						"value":0.0
+					},
+					"damping_linear":{
+						"type":"f32",
+						"value":0.0
+					},
+					"ccd_enable":{
+						"type":"bool",
+						"value":false
+					},
+					"sleep_allow":{
+						"type":"bool",
+						"value":false
+					},
+					"lock_translation":{
+						"type":"glam::vec3::IVec3",
+						"value":(
+							0,
+							0,
+							0
+						)
+					},
+					"lock_rotation":{
+						"type":"glam::vec3::IVec3",
+						"value":(
+							0,
+							0,
+							0
+						)
+					}
 				}
 			},
 			{
@@ -2108,7 +2379,7 @@
 		]
 	),
 	(
-		entity:28,
+		entity:29,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2179,7 +2450,7 @@
 		]
 	),
 	(
-		entity:29,
+		entity:30,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2250,7 +2521,7 @@
 		]
 	),
 	(
-		entity:30,
+		entity:31,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2321,7 +2592,7 @@
 		]
 	),
 	(
-		entity:31,
+		entity:32,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2392,7 +2663,7 @@
 		]
 	),
 	(
-		entity:32,
+		entity:33,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2463,7 +2734,7 @@
 		]
 	),
 	(
-		entity:33,
+		entity:34,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2534,7 +2805,7 @@
 		]
 	),
 	(
-		entity:34,
+		entity:35,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2605,7 +2876,7 @@
 		]
 	),
 	(
-		entity:35,
+		entity:36,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2676,7 +2947,7 @@
 		]
 	),
 	(
-		entity:36,
+		entity:37,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2747,7 +3018,7 @@
 		]
 	),
 	(
-		entity:37,
+		entity:38,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2818,7 +3089,7 @@
 		]
 	),
 	(
-		entity:38,
+		entity:39,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2889,7 +3160,7 @@
 		]
 	),
 	(
-		entity:39,
+		entity:40,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -2960,7 +3231,7 @@
 		]
 	),
 	(
-		entity:40,
+		entity:41,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3031,7 +3302,7 @@
 		]
 	),
 	(
-		entity:41,
+		entity:42,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3102,7 +3373,7 @@
 		]
 	),
 	(
-		entity:42,
+		entity:43,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3173,7 +3444,7 @@
 		]
 	),
 	(
-		entity:43,
+		entity:44,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3244,7 +3515,7 @@
 		]
 	),
 	(
-		entity:44,
+		entity:45,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3315,7 +3586,7 @@
 		]
 	),
 	(
-		entity:45,
+		entity:46,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3386,7 +3657,7 @@
 		]
 	),
 	(
-		entity:46,
+		entity:47,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3457,7 +3728,7 @@
 		]
 	),
 	(
-		entity:47,
+		entity:48,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3528,7 +3799,7 @@
 		]
 	),
 	(
-		entity:48,
+		entity:49,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3599,7 +3870,7 @@
 		]
 	),
 	(
-		entity:49,
+		entity:50,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3670,7 +3941,7 @@
 		]
 	),
 	(
-		entity:50,
+		entity:51,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3741,7 +4012,7 @@
 		]
 	),
 	(
-		entity:51,
+		entity:52,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3812,7 +4083,7 @@
 		]
 	),
 	(
-		entity:52,
+		entity:53,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3883,7 +4154,7 @@
 		]
 	),
 	(
-		entity:53,
+		entity:54,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -3954,7 +4225,7 @@
 		]
 	),
 	(
-		entity:54,
+		entity:55,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4025,7 +4296,7 @@
 		]
 	),
 	(
-		entity:55,
+		entity:56,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4096,7 +4367,7 @@
 		]
 	),
 	(
-		entity:56,
+		entity:57,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4167,7 +4438,7 @@
 		]
 	),
 	(
-		entity:57,
+		entity:58,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4238,7 +4509,7 @@
 		]
 	),
 	(
-		entity:58,
+		entity:59,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4309,7 +4580,7 @@
 		]
 	),
 	(
-		entity:59,
+		entity:60,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4380,7 +4651,7 @@
 		]
 	),
 	(
-		entity:60,
+		entity:61,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4451,7 +4722,7 @@
 		]
 	),
 	(
-		entity:61,
+		entity:62,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4522,7 +4793,7 @@
 		]
 	),
 	(
-		entity:62,
+		entity:63,
 		components:[
 			{
 				"type":"bevy_render::primitives::CubemapFrusta",
@@ -4639,7 +4910,7 @@
 		]
 	),
 	(
-		entity:63,
+		entity:64,
 		components:[
 			{
 				"type":"bevy_transform::components::global_transform::GlobalTransform",
@@ -4686,77 +4957,6 @@
 							2.0,
 							0.0,
 							0.5
-						)
-					},
-					"rotation":{
-						"type":"glam::quat::Quat",
-						"value":(
-							0.0,
-							0.0,
-							0.0,
-							1.0
-						)
-					},
-					"scale":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							1.0,
-							1.0,
-							1.0
-						)
-					}
-				}
-			}
-		]
-	),
-	(
-		entity:64,
-		components:[
-			{
-				"type":"bevy_transform::components::global_transform::GlobalTransform",
-				"struct":{
-					"translation":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							0.5,
-							-1.5,
-							0.0
-						)
-					},
-					"rotation":{
-						"type":"glam::quat::Quat",
-						"value":(
-							0.0,
-							0.0,
-							0.0,
-							1.0
-						)
-					},
-					"scale":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							1.0,
-							1.0,
-							1.0
-						)
-					}
-				}
-			},
-			{
-				"type":"blender_bevy_toolkit::blend_label::BlendLabel",
-				"struct":{
-					"name":"BasicWall1Door1.002"
-				}
-			},
-			{
-				"type":"bevy_transform::components::transform::Transform",
-				"struct":{
-					"translation":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							0.5,
-							-1.5,
-							0.0
 						)
 					},
 					"rotation":{
@@ -15926,11 +16126,11 @@
 				"struct":{
 					"friction":{
 						"type":"f32",
-						"value":0.5
+						"value":0.0
 					},
 					"restitution":{
 						"type":"f32",
-						"value":0.5
+						"value":0.0
 					},
 					"is_sensor":{
 						"type":"bool",
@@ -16702,192 +16902,6 @@
 							1.0,
 							1.0
 						)
-					}
-				}
-			}
-		]
-	),
-	(
-		entity:132,
-		components:[
-			{
-				"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription",
-				"struct":{
-					"friction":{
-						"type":"f32",
-						"value":0.5
-					},
-					"restitution":{
-						"type":"f32",
-						"value":0.5
-					},
-					"is_sensor":{
-						"type":"bool",
-						"value":false
-					},
-					"centroid_translation":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							0.8000001907348633,
-							7.748603820800781e-07,
-							2.9802322387695312e-08
-						)
-					},
-					"density":{
-						"type":"f32",
-						"value":0.5
-					},
-					"collider_shape":2,
-					"collider_shape_data":{
-						"type":"smallvec::SmallVec<[u8; 12]>",
-						"list":[
-							208,
-							204,
-							76,
-							63,
-							24,
-							0,
-							0,
-							62,
-							156,
-							153,
-							25,
-							63
-						]
-					}
-				}
-			},
-			{
-				"type":"bevy_render::view::visibility::ComputedVisibility",
-				"struct":{
-					"is_visible":{
-						"type":"bool",
-						"value":true
-					}
-				}
-			},
-			{
-				"type":"bevy_transform::components::global_transform::GlobalTransform",
-				"struct":{
-					"translation":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							0.5,
-							-1.5,
-							0.5
-						)
-					},
-					"rotation":{
-						"type":"glam::quat::Quat",
-						"value":(
-							0.0,
-							0.0,
-							-0.7071068286895752,
-							0.7071068286895752
-						)
-					},
-					"scale":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							1.0,
-							1.0,
-							1.0
-						)
-					}
-				}
-			},
-			{
-				"type":"blender_bevy_toolkit::blend_label::BlendLabel",
-				"struct":{
-					"name":"Cube.059"
-				}
-			},
-			{
-				"type":"blender_bevy_toolkit::blend_material::BlendMaterialLoader",
-				"struct":{
-					"path":"scenes/materials/83c13517cf36a96cfba75bf2a8ede5f6.material"
-				}
-			},
-			{
-				"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader",
-				"struct":{
-					"path":"scenes/meshes/918ec723287bbc5fcfc27a0a27f99e7c.mesh"
-				}
-			},
-			{
-				"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription",
-				"struct":{
-					"body_status":1,
-					"damping_angular":{
-						"type":"f32",
-						"value":0.0
-					},
-					"damping_linear":{
-						"type":"f32",
-						"value":0.0
-					},
-					"ccd_enable":{
-						"type":"bool",
-						"value":false
-					},
-					"sleep_allow":{
-						"type":"bool",
-						"value":false
-					},
-					"lock_translation":{
-						"type":"glam::vec3::IVec3",
-						"value":(
-							0,
-							0,
-							0
-						)
-					},
-					"lock_rotation":{
-						"type":"glam::vec3::IVec3",
-						"value":(
-							0,
-							0,
-							0
-						)
-					}
-				}
-			},
-			{
-				"type":"bevy_transform::components::transform::Transform",
-				"struct":{
-					"translation":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							0.5,
-							-1.5,
-							0.5
-						)
-					},
-					"rotation":{
-						"type":"glam::quat::Quat",
-						"value":(
-							0.0,
-							0.0,
-							-0.7071068286895752,
-							0.7071068286895752
-						)
-					},
-					"scale":{
-						"type":"glam::vec3::Vec3",
-						"value":(
-							1.0,
-							1.0,
-							1.0
-						)
-					}
-				}
-			},
-			{
-				"type":"bevy_render::view::visibility::Visibility",
-				"struct":{
-					"is_visible":{
-						"type":"bool",
-						"value":true
 					}
 				}
 			}

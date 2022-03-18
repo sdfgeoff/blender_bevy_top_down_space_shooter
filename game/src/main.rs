@@ -21,6 +21,25 @@ fn setup_world(
     physics_config.gravity.z = -9.8;
 }
 
+fn main() {
+    App::new()
+        .insert_resource(ClearColor(Color::BLACK))
+        .add_plugins(DefaultPlugins)
+        .add_plugin(RapierPhysicsPlugin::<NoUserData>::default())
+        .add_plugin(BlendLoadPlugin::default())
+        .register_type::<ship::EngineFlare>()
+        .register_type::<ship::Ship>()
+        .register_type::<player::Player>()
+        .add_startup_system(start_game)
+        .add_startup_system(setup_world)
+        .add_system(player::read_input.label("input"))
+        .add_system(control_ship.after("input"))
+        .run();
+}
+
+
+
+
 fn control_ship(
     mut playable_ships_query: Query<(
         &player::Player,
@@ -57,20 +76,4 @@ fn control_ship(
         rb_forces.force = forces.into();
         rb_forces.torque = torques.into();
     }
-}
-
-fn main() {
-    App::new()
-        .insert_resource(ClearColor(Color::BLACK))
-        .add_plugins(DefaultPlugins)
-        .add_plugin(RapierPhysicsPlugin::<NoUserData>::default())
-        .add_plugin(BlendLoadPlugin::default())
-        .register_type::<ship::EngineFlare>()
-        .register_type::<ship::Ship>()
-        .register_type::<player::Player>()
-        .add_startup_system(start_game)
-        .add_startup_system(setup_world)
-        .add_system(player::read_input.label("input"))
-        .add_system(control_ship.after("input"))
-        .run();
 }

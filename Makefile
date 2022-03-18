@@ -9,7 +9,6 @@ assets:
 	rm -r game/assets/scenes || true
 	$(BLENDER) -b assets_src/Level1.blend --python ./scripts/export.py --python-exit-code=1  -- --output-file="game/assets/scenes/Level1.scn" --log-level=DEBUG
 	$(BLENDER) -b assets_src/Particles.blend --python ./scripts/export.py --python-exit-code=1  -- --output-file="game/assets/scenes/Particles.scn" --log-level=DEBUG
-	$(BLENDER) -b assets_src/Player.blend --python ./scripts/export.py --python-exit-code=1  -- --output-file="game/assets/scenes/Player.scn" --log-level=DEBUG
 
 run:
 	cargo run --release game 
