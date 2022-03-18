@@ -181,6 +181,14 @@
 						"type":"bool",
 						"value":false
 					},
+					"centroid_translation":{
+						"type":"glam::vec3::Vec3",
+						"value":(
+							0.0,
+							0.027357295155525208,
+							0.045166581869125366
+						)
+					},
 					"density":{
 						"type":"f32",
 						"value":0.5
